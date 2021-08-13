@@ -273,7 +273,7 @@
     background-color: var(--black-color-alt);
   }
   .button-icon {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .button--flex {
     display: inline-flex;
@@ -371,3 +371,47 @@
     right: -11rem;
   }
   /* end of duiscount */
+
+  /* products */
+  .products-line {
+    line-height: 4rem;
+  }
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem 1.5rem ;
+    padding-top:3rem;
+  }
+  .products-card {
+    position: relative;
+    height: 132px;
+    background-color:grey;
+    padding: .75rem;
+    border-radius: .5rem;
+    display: grid;
+  }
+  .products-img {
+    width: 80px;
+    position: absolute;
+    inset: 0;
+    margin-left: auto;
+    margin-left: auto;
+    top: -4rem;
+  }
+  .products-content {
+    align-self: flex-end;
+  }
+  .product-title, .product-price {
+    font-size: var(--small-font-size);
+  }
+  .product-price {
+    font-weight: var(--font-semi-bold);
+  }
+  .products-button {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    padding: .5rem;
+    border-radius: .35rem;
+    font-size: .9rem;
+  }
+  /* end of products */
