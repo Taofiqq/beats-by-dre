@@ -1,0 +1,216 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+/* CSS VARIABLES */
+
+:root {
+    --header-height: 3rem;
+
+    /* Colors */
+
+    --hue-color: 206;
+    --black-color: hsl(var(--hue-color), 4%, 4%);
+    --black-color-alt: hsl(var(--hue-color), 4%, 8%);
+    --title-color: hsl(var(--hue-color), 4%, 95%);
+    --text-color: hsl(var(--hue-color), 4%, 75%);
+    --text-color-light: hsl(var(--hue-color), 4%, 65%);
+    --white-color: #fff;
+    --body-color: hsl(var(--hue-color), 4%, 6%);
+    --container-color: hsl(var(--hue-color), 4%, 10%)
+    --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+    --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+    --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+    
+    /* typography and fonts */
+    --body-font: 'Work Sans', sans-serif;
+    --biggest-font-size: 5rem;
+    --big-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --text-line-height: 2rem;
+    --bigger-font-size: 3.5rem;
+
+    /* font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* margins */
+    --mb-0-5: .5rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-0-75: .75rem;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+/* media query */
+@media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 7.5rem;
+      --bigger-font-size: 4.5rem;
+      --big-font-size: 4rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+
+  /* Base Css */
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  h1, h2, h3 {
+    color: var(--title-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button,
+  input {
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .section {
+    padding: 4rem 0 2rem;
+  }
+  
+  .section__title {
+    font-size: var(--bigger-font-size);
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+  
+  .section__title-gradient {
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  /* LAYOUT */
+  .main {
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+
+  /* Header */
+  .header{ 
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed)
+  }
+  .nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    display: flex;
+    width: 1.5rem;
+   
+  }
+  .nav-toggle {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-menu {
+      position: fixed;
+      background-color: var(--body-color);
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding: 4rem 0 3rem;
+      transition: 1s;
+    }
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .nav-link {
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    background: var(--text-gradient);
+    /* color: transparent; */
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .nav-link:hover {
+    color: green;
+    /* color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+
+  }
+  .nav-close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+  }
+  .show-menu {
+    top: 0;
+    transition: 1s;
+  }
