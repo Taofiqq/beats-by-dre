@@ -165,7 +165,7 @@
    
   }
   .nav-toggle {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--white-color);
     cursor: pointer;
 
@@ -328,3 +328,46 @@
     right: -4rem;
   }
   /* end of specs */
+
+  /* case */
+  .case-container {
+    position: relative;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .case-data {
+    padding: 5rem 0 3rem;
+  }
+  .case-img {
+    width: 250px;
+    position: absolute;
+    left: -7rem;
+  }
+  .case-description {
+    margin-bottom: var(--mb-1-5);
+    line-height:var(--text-line-height);
+  }
+
+  /* end of case */
+
+  /* discount */
+  .discount-container {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: .75rem;
+  }
+  .discount-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  .discount-description {
+    margin-bottom: var(--mb-1);
+  }
+  .discount-img {
+    width: 300px;
+    position: absolute;
+    top: 4rem;
+    right: -11rem;
+  }
+  /* end of duiscount */
