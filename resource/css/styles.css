@@ -288,6 +288,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
     border-radius: .5rem;
     background-color: var(--black-color);
     color: var(--white-color);
+    margin-bottom: var(--mb-3);
     transition: .3s;
   }
   .button:hover {
