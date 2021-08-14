@@ -59,3 +59,19 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+// Scroll reveal 
+const sr  = ScrollReveal({
+    distance: '60px', 
+    duration: 2500, 
+    delay: 400, 
+})
+
+sr.reveal('.home-header, .section-title', {delay:600});
+sr.reveal('.home-footer',{delay: 700});
+sr.reveal('.home-img',{delay: 900, origin: 'top'});
+sr.reveal('.sponsor-img, .products-card, .footer-logo, .footer-content, .footer-copy',{origin: 'top', interval:'100'});
+sr.reveal('.specs-data, .discount-animate',{origin: 'left', interval:'100'});
+sr.reveal('.specs-img, .discount-img',{origin: 'right'});
+sr.reveal('.case-img',{origin: 'top'});
+sr.reveal('.case-data');
