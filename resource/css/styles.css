@@ -282,6 +282,29 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
   /* end of home */
 
   /* buttons */
+  
+  .btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;         
+     outline: none;
+     font-family: var(--body-font);   
+     /* box-shadow: 0 0 20px #eee; */
+     border-radius: 4px;
+     display: block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
   .button{
     display: inline-block;
     padding:1rem 1.25rem;
@@ -556,6 +579,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
     .section-title {
       font-size: var(--big-font-size);
     }
+    
     .home-img{
       width: 200px;
       top: -13rem;
