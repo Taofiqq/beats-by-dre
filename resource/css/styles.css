@@ -501,7 +501,8 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
   }
   ::placeholder {
     font-family: var(--body-font);
-    padding: 1rem;
+    padding: .5rem;
+    font-size: .7rem;
   }
   .footer-social {
     display: flex;
