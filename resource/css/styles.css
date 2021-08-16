@@ -527,7 +527,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
   }
   .footer-copy-link {
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+    color: red;
   }
   /* end of footer */
 
