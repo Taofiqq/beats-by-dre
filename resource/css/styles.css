@@ -385,7 +385,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
   .case-img {
     width: 250px;
     position: absolute;
-    left: -7rem;
+    left: -2rem;
   }
   .case-description {
     margin-bottom: var(--mb-1-5);
@@ -523,7 +523,7 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
   }
   .footer-copy {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .footer-copy-link {
     font-size: var(--smaller-font-size);
@@ -613,8 +613,8 @@ background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, F
     }
     .case-img {
       width: 220px;
-      top: -2rem;
-      left: -9rem;
+      top: -.1rem;
+      left: -5rem;
     }
     .case-data {
       padding: 0;
